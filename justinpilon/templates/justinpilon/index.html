@@ -1,0 +1,12 @@
+{% extends 'justinpilon/base.html' %}
+{% load static %}
+
+{% block title %}
+Main Page
+{% endblock %}
+
+{% block body %}
+    {% include 'justinpilon/slideshow.html' %}
+    {% include 'justinpilon/descriptions.html' %}
+    <script src="{% static 'js/slideshow.js' %}"></script>
+{% endblock %}

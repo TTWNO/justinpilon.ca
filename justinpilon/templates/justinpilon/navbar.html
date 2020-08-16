@@ -1,0 +1,24 @@
+<div class="logo">justinpilon.ca</div>
+<div class="topnav">
+    <a class="active" href="{% url 'index' %}">Home</a>
+    <span style="color:white;">
+        {% if user.is_authenticated %}
+            Hello, {{ user.username }}!
+        {% else %}
+            You are not logged in!
+        {% endif %}
+    </span>
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="#About">About Me</a>
+            <a href="{% url 'pdfs' %}">PDFs</a>
+            <a href="#Artwork">Artwork</a>
+            <a href="{% url 'chat' %}">Chatline</a>
+            <a href="#Education">Math Practice</a>
+            <a href="#Appointments">Appointments</a>
+        </div>
+    </div>
+</div> 
