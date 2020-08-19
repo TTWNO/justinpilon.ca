@@ -25,10 +25,7 @@ SECRET_KEY = 'cl&$v3ly_b5=d^y8j76fr3)493+)rf&6c-_pi!hbxv(qjdww94'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '192.168.0.31',
-    '192.168.0.14'
-]
+ALLOWED_HOSTS = ['192.168.0.11']
 
 
 # Application definition
@@ -124,6 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = 'static_files/'
 LOGIN_REDIRECT_URL = 'index'
 
 CHANNEL_LAYERS = {
